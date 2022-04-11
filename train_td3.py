@@ -6,7 +6,8 @@ import torch
 
 from TD3 import TD3
 
-env_name = "MountainCarContinuous-v0" # multiple goals
+# env_name = "MountainCarContinuous-v0"
+env_name = "BipedalWalker-v3"
 
 # The following code is provided for the training of your agent in the 'BipedalWalker-v3' gym environment.
 gym.logger.set_level(40)
