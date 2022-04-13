@@ -8,8 +8,9 @@ class Actor(nn.Module):
     def __init__(self, state_dim, action_dim, action_bound, fc_units = 64):
         super(Actor, self).__init__()
         # actor
+        self.goal_dim = 3
         self.actor = nn.Sequential(
-                        nn.Linear(state_dim + state_dim, fc_units),
+                        nn.Linear(state_dim + self.goal_dim, fc_units),
                         nn.ReLU(),
                         nn.Linear(fc_units, fc_units),
                         nn.ReLU(),
@@ -21,15 +22,17 @@ class Actor(nn.Module):
         # self.offset = offset
         
     def forward(self, state, goal):
-        return (self.actor(torch.cat([state, goal], 1)) * self.action_bounds) # + self.offset
+        input_tensor = torch.cat([state, goal], 1) * self.action_bound
+        return self.actor(input_tensor) # + self.offset
         
 class Critic(nn.Module):
     """Build a critic (value) network that maps state-action-goal pairs -> Q-values."""
     def __init__(self, state_dim, action_dim, fc_units = 64):
         super(Critic, self).__init__()
         # UVFA critic
+        self.goal_dim = 3
         self.critic = nn.Sequential(
-                        nn.Linear(state_dim + action_dim + state_dim, 64),
+                        nn.Linear(state_dim + action_dim + self.goal_dim, 64),
                         nn.ReLU(),
                         nn.Linear(fc_units, fc_units),
                         nn.ReLU(),
