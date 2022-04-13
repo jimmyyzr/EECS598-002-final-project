@@ -41,7 +41,7 @@ class Critic(nn.Module):
         # rewards are in range [-1, 0]
         return -self.critic(torch.cat([state, action, goal], 1))
     
-class DDPG:
+class DDPG_UVFA:
     def __init__(self, state_dim, action_dim, action_bounds, lr, gamma):
         
         self.actor = Actor(state_dim, action_dim, action_bounds).to(device)
