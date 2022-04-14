@@ -7,7 +7,9 @@ os.environ['LANG']='en_US'
 
 env = gym.make("FetchReach-v1")
 env_sim = EnvModel()
-state = env.reset()
+state = env.reset(seed=10)
+a = env.observation_space["desired_goal"]
+print(state["desired_goal"])
 for _ in range(1000):
   env.render()
   action = env.action_space.sample() # your agent here (this takes random actions)
@@ -18,7 +20,8 @@ for _ in range(1000):
     r,s_next = env_sim.generate_data(state['observation'],action)
   state = next_state
   if done:
-    observation = env.reset()
+    observation = env.reset(seed=10)
+    print(observation["desired_goal"])
 env.close()
 
 

@@ -1,5 +1,6 @@
 import gym
 import numpy as np
+import torch
 from DDPG_UVFA import DDPG_UVFA
 from collections import deque
 from rbuffer import ReplayBuffer_GoalEnv
@@ -79,7 +80,8 @@ for ep in range(600):
         # Recieve state and reward from environment.
         next_state_dic, reward, done, info = env.step(action)
         next_state = next_state_dic["observation"]
-        print("next_state_desire goal",next_state_dic["desired_goal"])
+        desire_goal = next_state_dic["desired_goal"]
+        # print("next_state_desire goal",next_state_dic["desired_goal"])
         replay_buffer.add((state, action, reward, next_state, desire_goal,float(done)))
         episodic_reward += reward
         # env.render()
@@ -107,4 +109,6 @@ for ep in range(600):
     else:
         print('')
 
+actor_path = "actor.pth"
+torch.save(ddpg.actor.to("cpu").state_dict(), actor_path)
 env.close()
