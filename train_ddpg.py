@@ -2,7 +2,7 @@ import gym
 import numpy as np
 from DDPG import DDPG
 from collections import deque
-from utils import ReplayBuffer
+from rbuffer import ReplayBuffer
 
 # parameters:
 max_steps = 1600            # Maximum time steps for one episode
@@ -35,7 +35,6 @@ action_bound = env.action_space.high[0]
 action_clip_low = np.array([-1.0 * action_bound])
 action_clip_high = np.array([action_bound])
 
-
 ddpg = DDPG(state_size, action_size, action_bound, lr, gamma)
 replay_buffer = ReplayBuffer()
 
@@ -44,7 +43,7 @@ state = env.reset()
 for i in range(batch_size * 6):
     action = env.action_space.sample()
     action = action + np.random.normal(0, exploration_action_noise)
-    # action = action.clip(self.action_clip_low, self.action_clip_high)
+    action = action.clip(action_clip_low, action_clip_high)
 
     next_state, reward, done, info = env.step(action)
     replay_buffer.add((state, action, reward, next_state, float(done)))
@@ -67,6 +66,7 @@ for ep in range(600):
     for st in range(max_steps):
         # Select action according to policy
         action = ddpg.select_action(state)
+        action = action + np.random.normal(0, exploration_action_noise)
         action = action.clip(action_clip_low, action_clip_high)
         
         # Recieve state and reward from environment.
