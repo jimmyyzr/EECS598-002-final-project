@@ -47,7 +47,7 @@ state = state_dic["observation"][0:3]
 for i in range(batch_size * 6):
     action = env.action_space.sample()
     action = action + np.random.normal(0, exploration_action_noise)
-    # action = action.clip(self.action_clip_low, self.action_clip_high)
+    action = action.clip(action_clip_low, action_clip_high)
 
     next_state_dic, reward, done, info = env.step(action)
     next_state = next_state_dic["observation"][0:3]
@@ -74,6 +74,7 @@ for ep in range(600):
     for st in range(max_steps):
         # Select action according to policy
         action = ddpg.select_action(state) 
+        action = action + np.random.normal(0, exploration_action_noise)
         action = action.clip(action_clip_low, action_clip_high)
         
         # Recieve state and reward from environment.
