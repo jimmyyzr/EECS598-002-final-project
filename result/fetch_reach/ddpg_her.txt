@@ -1,0 +1,372 @@
+Start playing!
+Ep. 1, Ep.Timesteps 100, Episode Reward: -97.00
+Ep. 2, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 3, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 4, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 5, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 6, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 7, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 8, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 9, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 10, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 11, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 12, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 13, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 14, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 15, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 16, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 17, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 18, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 19, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 20, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 21, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 22, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 23, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 24, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 25, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 26, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 27, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 28, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 29, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 30, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 31, Ep.Timesteps 100, Episode Reward: -99.00
+Ep. 32, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 33, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 34, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 35, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 36, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 37, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 38, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 39, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 40, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 41, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 42, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 43, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 44, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 45, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 46, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 47, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 48, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 49, Ep.Timesteps 100, Episode Reward: -100.00
+Ep. 50, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 51, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 52, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 53, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 54, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 55, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 56, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 57, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 58, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 59, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 60, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 61, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 62, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 63, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 64, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 65, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 66, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 67, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 68, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 69, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 70, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 71, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 72, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 73, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 74, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 75, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 76, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 77, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 78, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.96
+Ep. 79, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 80, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 81, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 82, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 83, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 84, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 85, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 86, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 87, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 88, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 89, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 90, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 91, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 92, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 93, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 94, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 95, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 96, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 97, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 98, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 99, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 100, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 101, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 102, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 103, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 104, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 105, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 106, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 107, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 108, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 109, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 110, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.96
+Ep. 111, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 112, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 113, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 114, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 115, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 116, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 117, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 118, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 119, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 120, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 121, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 122, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 123, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 124, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 125, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 126, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 127, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 128, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 129, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 130, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 131, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 132, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 133, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 134, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.94
+Ep. 135, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 136, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 137, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 138, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.92
+Ep. 139, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 140, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 141, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 142, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 143, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 144, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 145, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 146, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 147, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 148, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 149, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 150, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 151, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 152, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 153, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 154, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 155, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 156, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 157, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 158, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 159, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 160, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 161, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 162, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 163, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 164, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 165, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 166, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 167, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 168, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 169, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 170, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 171, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 172, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 173, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.90
+Ep. 174, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 175, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 176, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 177, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 178, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 179, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 180, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 181, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 182, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 183, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 184, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 185, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 186, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 187, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 188, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 189, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 190, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 191, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 192, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 193, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 194, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 195, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 196, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 197, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 198, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 199, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 200, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 201, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 202, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 203, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.92
+Ep. 204, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 205, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 206, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 207, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 208, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 209, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 210, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 211, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 212, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 213, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 214, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 215, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 216, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 217, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 218, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 219, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 220, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 221, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 222, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 223, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 224, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 225, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 226, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 227, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 228, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.94
+Ep. 229, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 230, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 231, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 232, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 233, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 234, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 235, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 236, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 237, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 238, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 239, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 240, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 241, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 242, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 243, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 244, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 245, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 246, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 247, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 248, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 249, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 250, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 251, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.90
+Ep. 252, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 253, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 254, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.94
+Ep. 255, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.90
+Ep. 256, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 257, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 258, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 259, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 260, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 261, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 262, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 263, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 264, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 265, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 266, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 267, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 268, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 269, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 270, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 271, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 272, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 273, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 274, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 275, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 276, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 277, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 278, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.90
+Ep. 279, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 280, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.90
+Ep. 281, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.86
+Ep. 282, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 283, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 284, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 285, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 286, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 287, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 288, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 289, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 290, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 291, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 292, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 293, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 294, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 295, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 296, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 297, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 298, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 299, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.86
+Ep. 300, Ep.Timesteps 100, Episode Reward: -98.00, Moving Average Reward: -99.82
+Ep. 301, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.84
+Ep. 302, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.84
+Ep. 303, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.84
+Ep. 304, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.84
+Ep. 305, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 306, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 307, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 308, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 309, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 310, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 311, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 312, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 313, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 314, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 315, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 316, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 317, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 318, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 319, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 320, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 321, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 322, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 323, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 324, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 325, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 326, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 327, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 328, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.88
+Ep. 329, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 330, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.88
+Ep. 331, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 332, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 333, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 334, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 335, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 336, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 337, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 338, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 339, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 340, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 341, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 342, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 343, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 344, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 345, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 346, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 347, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 348, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 349, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.92
+Ep. 350, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 351, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 352, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 353, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 354, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 355, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 356, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.98
+Ep. 357, Ep.Timesteps 100, Episode Reward: -99.00, Moving Average Reward: -99.96
+Ep. 358, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 359, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 360, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 361, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 362, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 363, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 364, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 365, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 366, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 367, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 368, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 369, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 370, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96
+Ep. 371, Ep.Timesteps 100, Episode Reward: -100.00, Moving Average Reward: -99.96

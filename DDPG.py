@@ -1,3 +1,4 @@
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -18,7 +19,7 @@ class Actor(nn.Module):
                         nn.Tanh() #[-1,1]
                         )
         # max value of actions
-        self.action_bound = action_bound
+        self.action_bound = torch.tensor(action_bound).to(device)
         
     def forward(self, state):
         return self.actor(state) * self.action_bound #[-action_bound, action_bound]
@@ -62,9 +63,12 @@ class DDPG:
         
         for i in range(n_iter):
             # Sample a batch of transitions from replay buffer:
-            state, action, reward, next_state, done = buffer.sample(batch_size)
+            obs, action, reward, next_obs, done = buffer.sample(batch_size)
             
             # convert np arrays into tensors
+            state = np.concatenate((obs["observation"], obs["desired_goal"]),axis=1)
+            next_state = np.concatenate((next_obs["observation"], next_obs["desired_goal"]),axis=1)
+
             state = torch.FloatTensor(state).to(device)
             action = torch.FloatTensor(action).to(device)
             reward = torch.FloatTensor(reward).reshape((batch_size,1)).to(device)

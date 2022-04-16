@@ -16,6 +16,7 @@ class HerReplayBuffer():
         max_episode_length: int,
         n_sampled_goal: int = 4,
         goal_selection_strategy = GoalSelectionStrategy.FUTURE,
+        handle_timeout_termination: bool = True,
     ):
         """
         buffer_size: The size of the buffer measured in transitions.
@@ -32,14 +33,14 @@ class HerReplayBuffer():
 
         # Handle timeouts termination properly if needed
         # see https://github.com/DLR-RM/stable-baselines3/issues/284
-        # self.handle_timeout_termination = handle_timeout_termination
+        self.handle_timeout_termination = handle_timeout_termination
 
         # number of episodes which can be stored until buffer size is reached
         self.max_episode_stored = buffer_size // self.max_episode_length
         # idx for time steps when adding transition in one episode
         self.current_idx = 0 
         # Counter to prevent overflow
-        self.episode_steps = 0
+        self.episode_steps = 0 #TODO: Seems we can also use self.pos to presvent
         # buffer episode pointer
         self.pos = 0
         # Check if buffer is filled
@@ -56,11 +57,11 @@ class HerReplayBuffer():
             "achieved_goal": self.goal_shape,
             "desired_goal": self.goal_shape,
             "action": self.action_dim,
-            "reward": (1,)
+            "reward": (1,),
             # "next_obs": (self.env.num_envs,) + self.obs_shape, #TODO: Can we use the next one as next_obeservation
             # "next_achieved_goal": (self.env.num_envs,) + self.goal_shape, 
             # "next_desired_goal": (self.env.num_envs,) + self.goal_shape,
-            # "done": (1,),
+            "done": (1,),
         }
         self._observation_keys = ["observation", "achieved_goal", "desired_goal"]
         self._buffer = {
@@ -88,22 +89,22 @@ class HerReplayBuffer():
         action: np.ndarray,
         reward: np.ndarray,
         done: np.ndarray,
+        info: Dict[str, np.ndarray]
     ) -> None:
         """Add one transition in the buffer. 
         store_episode is called after all transitions from one episode are added
         """
-        # TODO: I only use done to record, not use it for reward or anything related to goal reaching
         # Remove termination signals due to timeout, so done really means reaching the goal
-        # if self.handle_timeout_termination:
-        #     done_ = done * (1 - np.array([info.get("TimeLimit.truncated", False) for info in infos]))
-        # else:
-        #     done_ = done
+        if self.handle_timeout_termination:
+            done_ = done * (1 - np.array(info.get("TimeLimit.truncated", False)))
+        else:
+            done_ = done
 
         self._buffer["observation"][self.pos][self.current_idx] = obs["observation"]
         self._buffer["achieved_goal"][self.pos][self.current_idx] = obs["achieved_goal"]
         self._buffer["desired_goal"][self.pos][self.current_idx] = obs["desired_goal"]
         self._buffer["action"][self.pos][self.current_idx] = action
-        # self._buffer["done"][self.pos][self.current_idx] = done_
+        self._buffer["done"][self.pos][self.current_idx] = done_
         self._buffer["reward"][self.pos][self.current_idx] = reward
         # self._buffer["next_obs"][self.pos][self.current_idx] = next_obs["observation"]
         # self._buffer["next_achieved_goal"][self.pos][self.current_idx] = next_obs["achieved_goal"]
@@ -175,7 +176,7 @@ class HerReplayBuffer():
         
         # Select which transitions to use (one transition per sampled episode)
         # ep_lengths for sampled episodes
-        ep_lengths = self.episode_lengths[episode_indices] 
+        ep_lengths = self.episode_lengths[episode_indices]
         # because we need next_achieved_goal, so here transitions_indices exlude the last one
         transitions_indices = np.random.randint(ep_lengths - 1)  
         # get selected transitions
@@ -206,8 +207,9 @@ class HerReplayBuffer():
         return (
             obs,
             transitions["action"],
+            transitions["reward"],
             next_obs,
-            transitions["reward"]
+            transitions["done"] # Her transition doesn't affect done
         )
     
     def sample_goals(
@@ -265,7 +267,7 @@ if __name__ == '__main__':
     for _ in range(2000):
         action = env.action_space.sample()
         obs, reward, done, info = env.step(action)
-        buffer.add(obs, action, reward, done)
+        buffer.add(obs, action, reward, done, info)
         if done:
             env.reset()
 
