@@ -1,0 +1,141 @@
+"Much better than sb3 ddpg (though env and algorithm parameters could be different)"
+
+training environment name : BipedalWalker-v3
+Episode : 15             Timestep : 10000                Average Reward : -80.83
+Episode : 40             Timestep : 20000                Average Reward : -95.27
+Episode : 60             Timestep : 30000                Average Reward : -84.34
+Episode : 84             Timestep : 40000                Average Reward : -95.51
+Episode : 103            Timestep : 50000                Average Reward : -81.43
+Episode : 123            Timestep : 60000                Average Reward : -79.78
+Episode : 133            Timestep : 70000                Average Reward : -46.67
+Episode : 145            Timestep : 80000                Average Reward : -57.23
+Episode : 157            Timestep : 90000                Average Reward : -54.14
+Episode : 168            Timestep : 100000               Average Reward : -49.78
+Episode : 179            Timestep : 110000               Average Reward : -49.56
+Episode : 190            Timestep : 120000               Average Reward : -50.4
+Episode : 202            Timestep : 130000               Average Reward : -54.02
+Episode : 212            Timestep : 140000               Average Reward : -46.15
+Episode : 222            Timestep : 150000               Average Reward : -36.8
+Episode : 234            Timestep : 160000               Average Reward : -59.52
+Episode : 245            Timestep : 170000               Average Reward : -54.71
+Episode : 258            Timestep : 180000               Average Reward : -55.86
+Episode : 271            Timestep : 190000               Average Reward : -55.86
+Episode : 281            Timestep : 200000               Average Reward : -42.9
+Episode : 291            Timestep : 210000               Average Reward : -35.13
+Episode : 302            Timestep : 220000               Average Reward : -37.06
+Episode : 312            Timestep : 230000               Average Reward : -26.52
+Episode : 322            Timestep : 240000               Average Reward : -17.82
+--------------------------------------------------------------------------------------------
+setting actor output action_std to :  0.55
+--------------------------------------------------------------------------------------------
+Episode : 332            Timestep : 250000               Average Reward : -14.25
+Episode : 343            Timestep : 260000               Average Reward : -11.82
+Episode : 355            Timestep : 270000               Average Reward : -14.97
+Episode : 366            Timestep : 280000               Average Reward : -2.4
+Episode : 377            Timestep : 290000               Average Reward : 9.03
+Episode : 387            Timestep : 300000               Average Reward : 29.82
+Episode : 398            Timestep : 310000               Average Reward : 25.69
+Episode : 408            Timestep : 320000               Average Reward : 37.47
+Episode : 420            Timestep : 330000               Average Reward : -3.86
+Episode : 432            Timestep : 340000               Average Reward : 22.51
+Episode : 442            Timestep : 350000               Average Reward : 53.09
+Episode : 453            Timestep : 360000               Average Reward : 41.22
+Episode : 464            Timestep : 370000               Average Reward : 63.7
+Episode : 475            Timestep : 380000               Average Reward : 51.72
+Episode : 488            Timestep : 390000               Average Reward : 25.06
+Episode : 503            Timestep : 400000               Average Reward : -14.64
+Episode : 514            Timestep : 410000               Average Reward : 63.63
+Episode : 529            Timestep : 420000               Average Reward : 3.19
+Episode : 543            Timestep : 430000               Average Reward : 14.13
+Episode : 556            Timestep : 440000               Average Reward : 39.14
+Episode : 567            Timestep : 450000               Average Reward : 47.06
+Episode : 577            Timestep : 460000               Average Reward : 96.42
+Episode : 591            Timestep : 470000               Average Reward : 40.81
+Episode : 602            Timestep : 480000               Average Reward : 83.43
+Episode : 615            Timestep : 490000               Average Reward : 42.25
+--------------------------------------------------------------------------------------------
+setting actor output action_std to :  0.5
+--------------------------------------------------------------------------------------------
+Episode : 628            Timestep : 500000               Average Reward : 41.44
+Episode : 640            Timestep : 510000               Average Reward : 63.75
+Episode : 657            Timestep : 520000               Average Reward : -4.31
+Episode : 668            Timestep : 530000               Average Reward : 59.69
+Episode : 680            Timestep : 540000               Average Reward : 82.48
+Episode : 690            Timestep : 550000               Average Reward : 82.87
+Episode : 703            Timestep : 560000               Average Reward : 70.09
+Episode : 713            Timestep : 570000               Average Reward : 105.82
+Episode : 723            Timestep : 580000               Average Reward : 103.74
+Episode : 735            Timestep : 590000               Average Reward : 68.61
+Episode : 746            Timestep : 600000               Average Reward : 64.76
+Episode : 756            Timestep : 610000               Average Reward : 100.5
+Episode : 768            Timestep : 620000               Average Reward : 81.52
+Episode : 778            Timestep : 630000               Average Reward : 104.31
+Episode : 790            Timestep : 640000               Average Reward : 89.34
+Episode : 803            Timestep : 650000               Average Reward : 36.77
+Episode : 814            Timestep : 660000               Average Reward : 86.63
+Episode : 824            Timestep : 670000               Average Reward : 104.99
+Episode : 834            Timestep : 680000               Average Reward : 124.23
+Episode : 846            Timestep : 690000               Average Reward : 58.92
+Episode : 858            Timestep : 700000               Average Reward : 63.0
+Episode : 868            Timestep : 710000               Average Reward : 129.01
+Episode : 879            Timestep : 720000               Average Reward : 114.89
+Episode : 890            Timestep : 730000               Average Reward : 72.11
+Episode : 904            Timestep : 740000               Average Reward : 46.18
+--------------------------------------------------------------------------------------------
+setting actor output action_std to :  0.45
+--------------------------------------------------------------------------------------------
+Episode : 915            Timestep : 750000               Average Reward : 94.97
+Episode : 928            Timestep : 760000               Average Reward : 65.74
+Episode : 940            Timestep : 770000               Average Reward : 72.05
+Episode : 954            Timestep : 780000               Average Reward : 66.96
+Episode : 964            Timestep : 790000               Average Reward : 142.5
+Episode : 975            Timestep : 800000               Average Reward : 118.03
+Episode : 985            Timestep : 810000               Average Reward : 126.69
+Episode : 995            Timestep : 820000               Average Reward : 131.5
+Episode : 1006           Timestep : 830000               Average Reward : 123.09
+Episode : 1018           Timestep : 840000               Average Reward : 103.65
+Episode : 1029           Timestep : 850000               Average Reward : 107.15
+Episode : 1041           Timestep : 860000               Average Reward : 80.75
+Episode : 1051           Timestep : 870000               Average Reward : 148.16
+Episode : 1063           Timestep : 880000               Average Reward : 69.92
+Episode : 1076           Timestep : 890000               Average Reward : 87.67
+Episode : 1087           Timestep : 900000               Average Reward : 96.03
+Episode : 1099           Timestep : 910000               Average Reward : 102.04
+Episode : 1111           Timestep : 920000               Average Reward : 89.35
+Episode : 1122           Timestep : 930000               Average Reward : 99.5
+Episode : 1133           Timestep : 940000               Average Reward : 102.31
+Episode : 1143           Timestep : 950000               Average Reward : 150.73
+Episode : 1155           Timestep : 960000               Average Reward : 88.83
+Episode : 1166           Timestep : 970000               Average Reward : 134.91
+Episode : 1177           Timestep : 980000               Average Reward : 130.75
+Episode : 1187           Timestep : 990000               Average Reward : 153.09
+--------------------------------------------------------------------------------------------
+setting actor output action_std to :  0.4
+--------------------------------------------------------------------------------------------
+Episode : 1199           Timestep : 1000000              Average Reward : 74.22
+Episode : 1211           Timestep : 1010000              Average Reward : 87.03
+Episode : 1222           Timestep : 1020000              Average Reward : 147.41
+Episode : 1233           Timestep : 1030000              Average Reward : 118.86
+Episode : 1243           Timestep : 1040000              Average Reward : 160.09
+Episode : 1255           Timestep : 1050000              Average Reward : 109.88
+Episode : 1266           Timestep : 1060000              Average Reward : 117.52
+Episode : 1278           Timestep : 1070000              Average Reward : 113.78
+Episode : 1290           Timestep : 1080000              Average Reward : 112.38
+Episode : 1301           Timestep : 1090000              Average Reward : 112.27
+Episode : 1313           Timestep : 1100000              Average Reward : 114.16
+Episode : 1325           Timestep : 1110000              Average Reward : 112.92
+Episode : 1337           Timestep : 1120000              Average Reward : 111.73
+Episode : 1349           Timestep : 1130000              Average Reward : 99.41
+Episode : 1362           Timestep : 1140000              Average Reward : 54.73
+Episode : 1375           Timestep : 1150000              Average Reward : 86.14
+Episode : 1385           Timestep : 1160000              Average Reward : 172.04
+Episode : 1397           Timestep : 1170000              Average Reward : 91.66
+Episode : 1410           Timestep : 1180000              Average Reward : 100.01
+Episode : 1422           Timestep : 1190000              Average Reward : 94.41
+Episode : 1437           Timestep : 1200000              Average Reward : 42.64
+Episode : 1450           Timestep : 1210000              Average Reward : 77.46
+Episode : 1465           Timestep : 1220000              Average Reward : 56.05
+Episode : 1476           Timestep : 1230000              Average Reward : 102.62
+Episode : 1486           Timestep : 1240000              Average Reward : 158.29
+--------------------------------------------------------------------------------------------
+setting actor output action_std to :  0.35
