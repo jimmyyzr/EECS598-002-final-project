@@ -11,7 +11,9 @@ High-Accuracy Model-Based Reinforcement Learning, a
 Survey https://arxiv.org/pdf/2107.08241.pdf
 
 PlanGAN: Model-based Planning With Sparse Rewards and Multiple Goals
+
 https://arxiv.org/pdf/2006.00900.pdf
+
 https://github.com/henrycharlesworth/PlanGAN
 
 Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning 
