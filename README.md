@@ -9,3 +9,6 @@ Continuous control with deep reinforcement learning (DDPG) https://arxiv.org/pdf
 
 High-Accuracy Model-Based Reinforcement Learning, a
 Survey https://arxiv.org/pdf/2107.08241.pdf
+
+PlanGAN: Model-based Planning With Sparse Rewards and Multiple Goals
+https://arxiv.org/pdf/2006.00900.pdf
