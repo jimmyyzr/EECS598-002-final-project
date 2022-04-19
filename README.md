@@ -15,3 +15,4 @@ https://arxiv.org/pdf/2006.00900.pdf
 
 Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning https://arxiv.org/pdf/1708.02596.pdf
 
+Input Convex Neural Networks for Building MPC   http://proceedings.mlr.press/v144/bunning21a/bunning21a.pdf
