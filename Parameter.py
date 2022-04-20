@@ -4,7 +4,7 @@ import torch
 # Set parameters
 B = 1  # Number of batches
 # N = 100  # Number of data points in each batch
-DY = 11  # Dimension Y data
+DY = 4  # Dimension Y data
 Ds = 1  # Dimensions for first factored kernel - only needed if factored kernel is used
 EPOCHS = 20  # Number of iterations to perform optimization
 THR = -1e5  # Training threshold (minimum)

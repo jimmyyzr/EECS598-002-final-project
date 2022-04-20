@@ -11,7 +11,7 @@ import torch.optim as optim
 """
 Some parameters
 """
-state_size = 3  # state dimension
+state_size = 6  # state dimension
 action_size = 4  # action dimension
 fc_units = 256  # number of neurons in one fully connected hidden layer
 action_upper_bound = 1  # action space upper bound

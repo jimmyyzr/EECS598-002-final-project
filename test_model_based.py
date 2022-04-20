@@ -13,7 +13,7 @@ env_name ="FetchReach-v1"
 env = gym.make(env_name).unwrapped 
 env = gym.wrappers.TimeLimit(env, max_episode_steps=max_steps+1)
 env_sim = EnvModel()
-mpc_actor = MPCController(10,10,env,env_sim)
+mpc_actor = MPCController(1,5,env,env_sim)
 
 timesteps_count = 0  # Counting the time steps
 
@@ -27,10 +27,11 @@ for _ in range(500):
   next_state = next_state_dic['observation']
   # store data into env model
   env_sim.store_data(state,action,reward,next_state)
+  # store data into replaybuff
   state = next_state
   if done:
     observation = env.reset()
-  # store data into replaybuff
+
 
 for ep in range(600):
   # Initial reset for each episode
