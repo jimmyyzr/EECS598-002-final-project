@@ -29,6 +29,7 @@ for _ in range(1000):
   print(reward)
   env.render()
 
+
   next_state = desire_goal-next_state_dic["observation"][0:3]
   state = next_state
   if done or info["is_success"]:
