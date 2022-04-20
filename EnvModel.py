@@ -23,11 +23,11 @@ class EnvModel:
         train_x = np.array(self.data_x)
         train_y = np.array(self.data_y)
         self.model = gp_train(train_x, train_y)
-
-    def generate_data(self, s, a):
+    # generate next state by simulation
+    def step(self, s, a):
         test_x = np.concatenate((s, a)).reshape(1,-1)
         model,likelihood,scale = self.model[:]
         predic =  gp_eval(test_x, model, likelihood, scale)
         r = predic[0]
-        s_next = predic[1:-1]
+        s_next = predic[1:]
         return r, s_next

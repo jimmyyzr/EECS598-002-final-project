@@ -17,7 +17,7 @@ for _ in range(1000):
   env_sim.store_data(state['observation'],action,reward,next_state['observation'])
   if _ > 10:
     env_sim.update_model()
-    r,s_next = env_sim.generate_data(state['observation'],action)
+    r,s_next = env_sim.step(state['observation'],action)
   state = next_state
   if done:
     observation = env.reset(seed=10)
