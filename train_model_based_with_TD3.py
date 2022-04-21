@@ -15,7 +15,7 @@ env_name ="FetchReach-v1"
 env = gym.make(env_name).unwrapped 
 env = gym.wrappers.TimeLimit(env, max_episode_steps=max_steps+1)
 env_sim = EnvModel()
-mpc_actor = MPCController(1,5,env,env_sim)
+mpc_actor = MPCController(2,5,env,env_sim)
 TD3_actor = TD3()
 timesteps_count = 0  # Counting the time steps
 
@@ -29,16 +29,18 @@ ep_reward_list_td3 = []
 for _ in range(10):
   state_dic = env.reset()
   state = state_dic['observation'][0:3]
-  goal = state_dic["desired_goal"]
+  desire_goal = state_dic["desired_goal"]
   for _ in range(50):
     action = env.action_space.sample() # your agent here (this takes random actions)
     next_state_dic, reward, done, info = env.step(action)
     next_state = next_state_dic['observation'][0:3]
+    a = np.sum(np.sqrt((desire_goal-next_state)**2))
+    reward  = a * reward
     # store data into env model
     env_sim.store_data(state,action,reward,next_state)
     # store data into replaybuff
-    s = np.concatenate((state, goal))
-    s_next = np.concatenate((next_state, goal))
+    s = np.concatenate((state, desire_goal))
+    s_next = np.concatenate((next_state, desire_goal))
     TD3_actor.add_to_replay_memory(s,action,reward,s_next,done)
 
     state = next_state
@@ -46,7 +48,7 @@ for _ in range(10):
       state_dic = env.reset()
 
 
-for ep in range(600):
+for ep in range(200):
   # Initial reset for each episode
   state_dic = env.reset()
   desire_goal = state_dic["desired_goal"]
@@ -62,6 +64,8 @@ for ep in range(600):
     # env.render()
     action = mpc_actor.get_best_action(state,desire_goal)
     next_state_dic, reward, done, info = env.step(action)
+    a = np.sum(np.sqrt((desire_goal-next_state)**2))
+    reward  = a * reward
     next_state = next_state_dic["observation"][0:3]
     episodic_reward += reward
 
@@ -86,7 +90,7 @@ for ep in range(600):
   if len(ep_reward_list_mpc) == 50:
     # Mean of last 50 episodes
     avg_reward = sum(ep_reward_list_mpc) / 50
-    print(', Moving Average Reward: {:.2f}'.format(avg_reward))
+    print(', Moving Average Reward_MPC: {:.2f}'.format(avg_reward))
   else:
     print('')
   
@@ -104,13 +108,17 @@ for ep in range(600):
     action = TD3_actor.policy(s)
     next_state_dic, reward, done, info = env.step(action)
     next_state = next_state_dic["observation"][0:3]
+    a = np.sum(np.sqrt((desire_goal-next_state)**2))
+    reward  = a * reward
+   
+    
     episodic_reward += reward
 
     # store data into env model
     env_sim.store_data(state,action,reward,next_state)
     # store data into replaybuff and train
-    s = np.concatenate((state, goal))
-    s_next = np.concatenate((next_state, goal))
+    s = np.concatenate((state, desire_goal))
+    s_next = np.concatenate((next_state, desire_goal))
     # TD3_actor.add_to_replay_memory(s,action,reward,s_next,done)
     # TD3_actor.train(timesteps_count, timestep_for_cur_episode, s, action, reward, s_next, done)
     state = next_state
@@ -127,7 +135,7 @@ for ep in range(600):
   if len(ep_reward_list_td3) == 50:
     # Mean of last 50 episodes
     avg_reward = sum(ep_reward_list_td3) / 50
-    print(', Moving Average Reward: {:.2f}'.format(avg_reward))
+    print(', Moving Average Reward_TD3: {:.2f}'.format(avg_reward))
   else:
     print('')
 
