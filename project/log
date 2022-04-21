@@ -1,0 +1,12 @@
+EnvModel.py
+
+check TODO: 
+self.data_x.append(x.tolist()) # don't to list
+random_sampling is incorrect  #
+
+
+MPC.py
+
+too many for loop here in virtual_sim (p.py)
+check TODO in p.py. 
+Do it in a batch way, and vectorize it. 
