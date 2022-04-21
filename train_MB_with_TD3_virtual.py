@@ -15,7 +15,7 @@ env_name ="FetchReach-v1"
 env = gym.make(env_name).unwrapped 
 env = gym.wrappers.TimeLimit(env, max_episode_steps=max_steps+1)
 env_sim = EnvModel()
-mpc_actor = MPCController(2,5,env,env_sim)
+mpc_actor = MPCController(1,5,env,env_sim)
 TD3_actor = TD3()
 timesteps_count = 0  # Counting the time steps
 
@@ -48,7 +48,7 @@ for _ in range(10):
       state_dic = env.reset()
 
 
-for ep in range(200):
+for ep in range(600):
   # Initial reset for each episode
   state_dic = env.reset()
   desire_goal = state_dic["desired_goal"]
@@ -81,24 +81,21 @@ for ep in range(200):
     timestep_for_cur_episode += 1     
     timesteps_count += 1
     # End this episode when `done` is True
-    if done:
+    if done or info["is_success"]:
         break
    
   ep_reward_list_mpc.append(episodic_reward)
-  print('Ep. {}, Ep.Timesteps {}, Episode Reward_MPC: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='')
+  print('Ep. {}, Ep.Timesteps {}, Episode Reward_MPC: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n',)
         
-  if len(ep_reward_list_mpc) == 50:
-    # Mean of last 50 episodes
-    avg_reward = sum(ep_reward_list_mpc) / 50
-    print(', Moving Average Reward_MPC: {:.2f}'.format(avg_reward))
-  else:
-    print('')
   
   # Initial reset for each episode2
   state_dic = env.reset()
   desire_goal = state_dic["desired_goal"]
   state = state_dic["observation"][0:3]
-        
+  # update world model each episode2
+  env_sim.update_model()
+  mpc_actor.dyna_model = env_sim
+
   episodic_reward = 0
   timestep_for_cur_episode = 0
 
@@ -106,38 +103,34 @@ for ep in range(200):
     # env.render()
     s = np.concatenate((state, desire_goal))
     action = TD3_actor.policy(s)
-    next_state_dic, reward, done, info = env.step(action)
-    next_state = next_state_dic["observation"][0:3]
-    a = np.sum(np.sqrt((desire_goal-next_state)**2))
-    reward  = a * reward
+    # next_state_dic, reward, done, info = env.step(action)
+    r, next_state = env_sim.step(state,action)
+    # next_state = next_state_dic["observation"][0:3]
+    reward = np.sum(np.sqrt((desire_goal-next_state)**2))*-1
+ 
    
     
     episodic_reward += reward
 
-    # store data into env model
-    env_sim.store_data(state,action,reward,next_state)
     # store data into replaybuff and train
     s = np.concatenate((state, desire_goal))
     s_next = np.concatenate((next_state, desire_goal))
     # TD3_actor.add_to_replay_memory(s,action,reward,s_next,done)
-    # TD3_actor.train(timesteps_count, timestep_for_cur_episode, s, action, reward, s_next, done)
+    TD3_actor.train(timesteps_count, timestep_for_cur_episode, s, action, reward, s_next, done)
     state = next_state
 
     timestep_for_cur_episode += 1     
     timesteps_count += 1
     # End this episode when `done` is True
-    if done:
+    error = np.abs(state-desire_goal) 
+    stand = np.array([0.01,0.01,0.01])
+    if (error <= stand).all():
         break
    
   ep_reward_list_td3.append(episodic_reward)
-  print('Ep. {}, Ep.Timesteps {}, Episode Reward_for_TD3: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='')
+  print('Ep. {}, Ep.Timesteps {}, Episode Reward_for_TD3: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n')
         
-  if len(ep_reward_list_td3) == 50:
-    # Mean of last 50 episodes
-    avg_reward = sum(ep_reward_list_td3) / 50
-    print(', Moving Average Reward_TD3: {:.2f}'.format(avg_reward))
-  else:
-    print('')
+
 
 
 actor_path = "actor_TD3.pth"

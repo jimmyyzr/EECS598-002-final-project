@@ -297,7 +297,7 @@ class TD3:
 def main():
     c = 0.3
     timesteps_count = 0  # Counting the time steps
-    max_steps = 600  # Maximum time steps for one episode
+    max_steps = 100  # Maximum time steps for one episode
     ep_reward_list = deque(maxlen=50)
     avg_reward = -9999
     # The following code is provided for the training of your agent in the 'BipedalWalker-v3' gym environment.

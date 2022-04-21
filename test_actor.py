@@ -22,7 +22,7 @@ state = desire_goal - state_dic["observation"][0:3]
 
 
 for _ in range(1000):
-  action = env.action_space.sample() # your agent here (this takes random actions)
+  # action = env.action_space.sample() # your agent here (this takes random actions)
   action = agent.policy(state) # your agent here (this takes random actions)
 
   next_state_dic, reward, done, info = env.step(action)
