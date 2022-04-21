@@ -23,3 +23,6 @@ https://arxiv.org/pdf/1708.02596.pdf
 https://github.com/anagabandi/nn_dynamics
 
 Input Convex Neural Networks for Building MPC   http://proceedings.mlr.press/v144/bunning21a/bunning21a.pdf
+
+Information Theoretic MPC for Model-Based Reinforcement Learning
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7989202
