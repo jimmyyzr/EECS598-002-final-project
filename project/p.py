@@ -1,11 +1,11 @@
-from stable_baselines3 import DDPG, TD3M
-from stable_baselines3.common.noise import NormalActionNoise
+# from stable_baselines3 import DDPG, TD3M
+# from stable_baselines3.common.noise import NormalActionNoise
 import gym
 import numpy as np
 
 from Pbuffer import Pbuffer
 
-from MPC import MPCController
+from MPC2 import MPCController
 from EnvModel import EnvModel
 
 
@@ -65,7 +65,7 @@ P = Pbuffer()
 state_dic = env.reset()
 
 env_sim = EnvModel()
-mpc_actor = MPCController(1, 5, env, env_sim)
+mpc_actor = MPCController(1, 100, env, env_sim)
 
 last_buffer_pos = 0 # buffer pointer, used with current buffer pointer to index new transitions
 for i in range(10):

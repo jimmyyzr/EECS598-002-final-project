@@ -4,7 +4,7 @@ from gym.spaces import Discrete, Dict, Box
 import os
 import numpy as np
 from EnvModel import EnvModel
-from MPC import MPCController
+from MPC2 import MPCController
 from collections import deque
 from train_td3_reward_shaping import TD3
 import torch
@@ -15,7 +15,7 @@ env_name ="FetchReach-v1"
 env = gym.make(env_name).unwrapped 
 env = gym.wrappers.TimeLimit(env, max_episode_steps=max_steps+1)
 env_sim = EnvModel()
-mpc_actor = MPCController(1,5,env,env_sim)
+mpc_actor = MPCController(1,100,env,env_sim)
 TD3_actor = TD3()
 timesteps_count = 0  # Counting the time steps
 
@@ -82,7 +82,9 @@ for ep in range(600):
     timesteps_count += 1
     # End this episode when `done` is True
     if done or info["is_success"]:
-        break
+      state_dic = env.reset()
+      desire_goal = state_dic["desired_goal"]
+      state = state_dic["observation"][0:3]
    
   ep_reward_list_mpc.append(episodic_reward)
   print('Ep. {}, Ep.Timesteps {}, Episode Reward_MPC: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n',)
@@ -125,7 +127,9 @@ for ep in range(600):
     error = np.abs(state-desire_goal) 
     stand = np.array([0.01,0.01,0.01])
     if (error <= stand).all():
-        break
+      state_dic = env.reset()
+      desire_goal = state_dic["desired_goal"]
+      state = state_dic["observation"][0:3]
    
   ep_reward_list_td3.append(episodic_reward)
   print('Ep. {}, Ep.Timesteps {}, Episode Reward_for_TD3: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n')

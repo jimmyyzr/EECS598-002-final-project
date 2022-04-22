@@ -61,7 +61,7 @@ for ep in range(600):
   mpc_actor.dyna_model = env_sim
 
   for step in range(max_steps):
-    env.render()
+    # env.render()
     action = mpc_actor.get_best_action(state,desire_goal)
     next_state_dic, reward, done, info = env.step(action)
     # a = np.sum(np.sqrt((desire_goal-next_state)**2))
@@ -100,7 +100,7 @@ for ep in range(600):
   timestep_for_cur_episode = 0
 
   for step in range(max_steps):
-    env.render()
+    # env.render()
     s = np.concatenate((state, desire_goal))
     action = TD3_actor.policy(s)
     next_state_dic, reward, done, info = env.step(action)
@@ -128,7 +128,7 @@ for ep in range(600):
       desire_goal = state_dic["desired_goal"]
       state = state_dic["observation"][0:3]
       
-      break
+      # break
    
   ep_reward_list_td3.append(episodic_reward)
   print('Ep. {}, Ep.Timesteps {}, Episode Reward_for_TD3: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n')

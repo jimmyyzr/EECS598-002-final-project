@@ -10,7 +10,7 @@ os.environ['LANG']='en_US'
 
 
 agent = TD3()
-actor = torch.load('actor_td3_UVFA.pth')
+actor = torch.load('actor_TD3.pth')
 agent.actor.load_state_dict(actor)
 max_steps = 100
 env_name ="FetchReach-v1"
