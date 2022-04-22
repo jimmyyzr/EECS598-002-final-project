@@ -47,7 +47,7 @@ for ep in range(600):
 
   for step in range(max_steps):
     env.render()
-    action = mpc_actor.get_best_action(state,desire_goal)
+    action = mpc_actor.get_best_action(state, desire_goal)
     next_state_dic, reward, done, info = env.step(action)
     next_state = next_state_dic["observation"]
     episodic_reward += reward
