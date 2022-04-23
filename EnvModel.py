@@ -6,10 +6,10 @@ import random
 class EnvModel:
     """Similar to the memory buffer in DQN, you can store past experiences in here.
     Alternatively, the model can generate next state and reward signal accurately."""
-    def __init__(self):
+    def __init__(self, batch_size=500):
         self.data_x = []
         self.data_y = []
-        self.batch_size = 500
+        self.batch_size = batch_size
         self.model = None
 
     def store_data(self, s, a, r, s_next):
