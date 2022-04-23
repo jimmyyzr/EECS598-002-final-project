@@ -4,7 +4,7 @@ import matplotlib as mpl
 
 a = np.load("ep_reward_list_mpc.npy")
 b = np.load("ep_reward_list_td3.npy")
-# c = np.load("ep_reward_td3_UVFA_dense.npy")
+# c = np.load("ep_reward_list_td3_only.npy")
 # mpl.style.use(sty)
 print("hhhh")
 fig1=  plt.figure()

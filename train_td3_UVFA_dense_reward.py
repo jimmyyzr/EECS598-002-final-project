@@ -298,7 +298,7 @@ def main():
     c = 0.3
     timesteps_count = 0  # Counting the time steps
     max_steps = 100  # Maximum time steps for one episode
-    ep_reward_list = deque(maxlen=50)
+    ep_reward_list = []
     avg_reward = -9999
     # The following code is provided for the training of your agent in the 'BipedalWalker-v3' gym environment.
     gym.logger.set_level(40)
@@ -339,7 +339,7 @@ def main():
             next_state_dic, reward, done, info = env.step(action)
             next_state = next_state_dic["observation"][0:3]
             a = np.sum(np.sqrt((desire_goal-next_state)**2))
-            reward  = a * reward
+            # reward  = a * reward
             episodic_reward += reward
             s_next = np.concatenate((next_state, desire_goal))
             # Send the experience to the agent and train the agent
@@ -350,23 +350,21 @@ def main():
             
             # End this episode when `done` is True
             if done:
+                state_dic = env.reset()
+                desire_goal = state_dic["desired_goal"]
+                state = state_dic["observation"][0:3]
                 break
             state = next_state
 
         ep_reward_list.append(episodic_reward)
-        print('Ep. {}, Ep.Timesteps {}, Episode Reward: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='')
+        print('Ep. {}, Ep.Timesteps {}, Episode Reward: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n')
         
-        if len(ep_reward_list) == 50:
-            # Mean of last 50 episodes
-            avg_reward = sum(ep_reward_list) / 50
-            print(', Moving Average Reward: {:.2f}'.format(avg_reward))
-        else:
-            print('')
+ 
 
-    print('Average reward over 50 episodes: ', avg_reward)
     env.close()
 
     actor_path = "actor_td3_UVFA.pth"
+    np.save('ep_reward_list_td3_only',ep_reward_list)
     torch.save(agent.actor.to("cpu").state_dict(), actor_path)
 
 

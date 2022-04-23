@@ -64,8 +64,8 @@ for ep in range(600):
     # env.render()
     action = mpc_actor.get_best_action(state,desire_goal)
     next_state_dic, reward, done, info = env.step(action)
-    # a = np.sum(np.sqrt((desire_goal-next_state)**2))
-    # reward  = a * reward
+    a = np.sum(np.sqrt((desire_goal-next_state)**2))
+    reward  = a * reward
     next_state = next_state_dic["observation"][0:3]
     episodic_reward += reward
 
@@ -81,11 +81,11 @@ for ep in range(600):
     timesteps_count += 1
 
     # End this episode when `done` is True
-    if done or info["is_success"]:
-      state_dic = env.reset()
-      desire_goal = state_dic["desired_goal"]
-      state = state_dic["observation"][0:3]
-      # break
+    # if done or info["is_success"]:
+    #   state_dic = env.reset()
+    #   desire_goal = state_dic["desired_goal"]
+    #   state = state_dic["observation"][0:3]
+    #   # break
 
   ep_reward_list_mpc.append(episodic_reward)
   print('Ep. {}, Ep.Timesteps {}, Episode Reward_MPC: {:.2f}'.format(ep + 1, timestep_for_cur_episode, episodic_reward), end='\n',)
@@ -105,8 +105,8 @@ for ep in range(600):
     action = TD3_actor.policy(s)
     next_state_dic, reward, done, info = env.step(action)
     next_state = next_state_dic["observation"][0:3]
-    # a = np.sum(np.sqrt((desire_goal-next_state)**2))
-    # reward  = a * reward
+    a = np.sum(np.sqrt((desire_goal-next_state)**2))
+    reward  = a * reward
    
     
     episodic_reward += reward
@@ -123,10 +123,10 @@ for ep in range(600):
     timestep_for_cur_episode += 1     
     timesteps_count += 1
     # End this episode when `done` is True
-    if done or info["is_success"]:
-      state_dic = env.reset()
-      desire_goal = state_dic["desired_goal"]
-      state = state_dic["observation"][0:3]
+    # if done or info["is_success"]:
+      # state_dic = env.reset()
+      # desire_goal = state_dic["desired_goal"]
+      # state = state_dic["observation"][0:3]
       
       # break
    

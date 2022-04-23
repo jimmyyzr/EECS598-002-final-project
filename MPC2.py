@@ -28,9 +28,11 @@ class MPCController:
         upperbound =self.env.action_space.high
         action_dim = self.env.action_space.shape[0]
         all_control_samples = np.random.uniform(lowbound, upperbound, (self.H, self.NUM,action_dim ))
+        stop_control = np.zeros((self.H,1,action_dim ))
+
     
     #   H horizon extend
-        whole_cost_list = []
+
         s_t = np.tile(s_inital,(self.NUM,1))
         total_cost = 0
         for actions in all_control_samples:
@@ -45,12 +47,22 @@ class MPCController:
             c_t = self.cost_function_multisample(s_t,actions,s_next,goal)
             total_cost += c_t
             s_t = s_next
-     
+        total_cost_stop = 0
+        for a in stop_control:
+          
+            r,s_next = self.dyna_model.step(s_inital,a.squeeze()) 
 
+            c_t = self.cost_function(s_t,actions,s_next,goal)
+            total_cost_stop += c_t
+            s_t = s_next
+        total_cost = np.append(total_cost_stop,total_cost)
     #   Choose best action
 
         minmum_cost_index = np.argmin(total_cost)
-        best_action = all_control_samples[0][minmum_cost_index]
+        if minmum_cost_index ==0:
+            best_action = np.array([0,0,0,0])
+        else:
+            best_action = all_control_samples[0][minmum_cost_index-1]
         
         return best_action
  

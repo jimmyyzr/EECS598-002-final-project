@@ -64,8 +64,8 @@ for ep in range(600):
     # env.render()
     action = mpc_actor.get_best_action(state,desire_goal)
     next_state_dic, reward, done, info = env.step(action)
-    a = np.sum(np.sqrt((desire_goal-next_state)**2))
-    reward  = a * reward
+    # a = np.sum(np.sqrt((desire_goal-next_state)**2))
+    # reward  = a * reward
     next_state = next_state_dic["observation"][0:3]
     episodic_reward += reward
 
@@ -108,9 +108,13 @@ for ep in range(600):
     # next_state_dic, reward, done, info = env.step(action)
     r, next_state = env_sim.step(state,action)
     # next_state = next_state_dic["observation"][0:3]
-    reward = np.sum(np.sqrt((desire_goal-next_state)**2))*-1
- 
-   
+    # reward = np.sum(np.sqrt((desire_goal-next_state)**2))*-1
+    reward = -1
+
+    error = np.abs(next_state-desire_goal) 
+    stand = np.array([0.01,0.01,0.01])
+    if (error <= stand).all():
+      reward = 0
     
     episodic_reward += reward
 
@@ -124,8 +128,7 @@ for ep in range(600):
     timestep_for_cur_episode += 1     
     timesteps_count += 1
     # End this episode when `done` is True
-    error = np.abs(state-desire_goal) 
-    stand = np.array([0.01,0.01,0.01])
+
     if (error <= stand).all():
       state_dic = env.reset()
       desire_goal = state_dic["desired_goal"]

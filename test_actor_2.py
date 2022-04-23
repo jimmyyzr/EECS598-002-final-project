@@ -11,6 +11,8 @@ os.environ['LANG']='en_US'
 
 agent = TD3()
 actor = torch.load('actor_TD3.pth')
+# actor = torch.load('actor_td3_UVFA.pth')
+
 agent.actor.load_state_dict(actor)
 max_steps = 100
 env_name ="FetchReach-v1"
@@ -32,12 +34,16 @@ for _ in range(1000):
   next_state = next_state_dic["observation"][0:3]
   state = next_state
 
-  if done or info["is_success"]:
+  # if done or info["is_success"]:
+  #   # state_dic = env.reset()
+  #   # desire_goal = state_dic["desired_goal"]
+  #   # state = desire_goal - state_dic["observation"][0:3]
+  #   print(info)
+  if done:
     state_dic = env.reset()
     desire_goal = state_dic["desired_goal"]
     state = desire_goal - state_dic["observation"][0:3]
-    print(info)
-    
+  
  
 env.close()
 
